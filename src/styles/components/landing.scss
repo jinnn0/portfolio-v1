@@ -7,6 +7,7 @@
   justify-content: space-between;
   scroll-snap-align: start;
   scroll-snap-align: end;
+  overflow: hidden;
 
   .texts {
     h1 {
@@ -53,7 +54,7 @@
     }
   }
 
-  .typing:after {
+  .type-me:after {
     content: '';
     position: absolute;
     width: 10px;
