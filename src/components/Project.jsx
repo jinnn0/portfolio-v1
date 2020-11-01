@@ -1,5 +1,5 @@
 import React from 'react';
-import ghIcon from '../images/gitHub.png';
+import ghLogo from '../assets/images/logo/gitHub.png';
 
 const Project = ({ project }) => {
   return (
@@ -7,7 +7,9 @@ const Project = ({ project }) => {
       <div className="project">
         <div className="project__img">
           <a href={project.projectLink} target="_blank">
-            <img src={project.img} alt={project.alt} className="lazyload" />
+            <video playsinline autoPlay loop muted poster={project.poster}>
+              <source src={project.video} />
+            </video>
           </a>
         </div>
 
@@ -20,7 +22,7 @@ const Project = ({ project }) => {
             <div className="source-code">
               <a href={project.sourceCode} target="_blank">
                 See the source code
-                <img className="gh-icon" src={ghIcon} alt="gitHub logo" />
+                <img className="gh-icon" src={ghLogo} alt="gitHub logo" />
               </a>
             </div>
           </div>
