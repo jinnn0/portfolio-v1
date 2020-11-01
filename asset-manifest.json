@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/thisis-jin-react/static/css/main.b350d7e7.chunk.css",
-    "main.js": "/thisis-jin-react/static/js/main.7003963e.chunk.js",
-    "main.js.map": "/thisis-jin-react/static/js/main.7003963e.chunk.js.map",
-    "runtime-main.js": "/thisis-jin-react/static/js/runtime-main.f52aecd0.js",
-    "runtime-main.js.map": "/thisis-jin-react/static/js/runtime-main.f52aecd0.js.map",
-    "static/js/2.161fdab4.chunk.js": "/thisis-jin-react/static/js/2.161fdab4.chunk.js",
-    "static/js/2.161fdab4.chunk.js.map": "/thisis-jin-react/static/js/2.161fdab4.chunk.js.map",
-    "index.html": "/thisis-jin-react/index.html",
-    "static/css/main.b350d7e7.chunk.css.map": "/thisis-jin-react/static/css/main.b350d7e7.chunk.css.map",
-    "static/js/2.161fdab4.chunk.js.LICENSE.txt": "/thisis-jin-react/static/js/2.161fdab4.chunk.js.LICENSE.txt",
-    "static/media/agency.2c734b0f.jpg": "/thisis-jin-react/static/media/agency.2c734b0f.jpg",
-    "static/media/agency.661a94a2.mov": "/thisis-jin-react/static/media/agency.661a94a2.mov",
-    "static/media/timer.771d0234.mov": "/thisis-jin-react/static/media/timer.771d0234.mov",
-    "static/media/timer.ac3bd883.jpg": "/thisis-jin-react/static/media/timer.ac3bd883.jpg",
-    "static/media/todo.64dd7a5b.jpg": "/thisis-jin-react/static/media/todo.64dd7a5b.jpg",
-    "static/media/todo.e40f0fcb.mov": "/thisis-jin-react/static/media/todo.e40f0fcb.mov",
-    "static/media/twitter-clone.7f6aeeb0.mov": "/thisis-jin-react/static/media/twitter-clone.7f6aeeb0.mov",
-    "static/media/twitter-clone.b9ddd433.jpg": "/thisis-jin-react/static/media/twitter-clone.b9ddd433.jpg"
+    "main.css": "/thisis-jin-v2/static/css/main.b350d7e7.chunk.css",
+    "main.js": "/thisis-jin-v2/static/js/main.0daaf016.chunk.js",
+    "main.js.map": "/thisis-jin-v2/static/js/main.0daaf016.chunk.js.map",
+    "runtime-main.js": "/thisis-jin-v2/static/js/runtime-main.21bafe6e.js",
+    "runtime-main.js.map": "/thisis-jin-v2/static/js/runtime-main.21bafe6e.js.map",
+    "static/js/2.7fad7247.chunk.js": "/thisis-jin-v2/static/js/2.7fad7247.chunk.js",
+    "static/js/2.7fad7247.chunk.js.map": "/thisis-jin-v2/static/js/2.7fad7247.chunk.js.map",
+    "index.html": "/thisis-jin-v2/index.html",
+    "static/css/main.b350d7e7.chunk.css.map": "/thisis-jin-v2/static/css/main.b350d7e7.chunk.css.map",
+    "static/js/2.7fad7247.chunk.js.LICENSE.txt": "/thisis-jin-v2/static/js/2.7fad7247.chunk.js.LICENSE.txt",
+    "static/media/agency.2c734b0f.jpg": "/thisis-jin-v2/static/media/agency.2c734b0f.jpg",
+    "static/media/agency.661a94a2.mov": "/thisis-jin-v2/static/media/agency.661a94a2.mov",
+    "static/media/timer.771d0234.mov": "/thisis-jin-v2/static/media/timer.771d0234.mov",
+    "static/media/timer.ac3bd883.jpg": "/thisis-jin-v2/static/media/timer.ac3bd883.jpg",
+    "static/media/todo.64dd7a5b.jpg": "/thisis-jin-v2/static/media/todo.64dd7a5b.jpg",
+    "static/media/todo.e40f0fcb.mov": "/thisis-jin-v2/static/media/todo.e40f0fcb.mov",
+    "static/media/twitter-clone.7f6aeeb0.mov": "/thisis-jin-v2/static/media/twitter-clone.7f6aeeb0.mov",
+    "static/media/twitter-clone.b9ddd433.jpg": "/thisis-jin-v2/static/media/twitter-clone.b9ddd433.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f52aecd0.js",
-    "static/js/2.161fdab4.chunk.js",
+    "static/js/runtime-main.21bafe6e.js",
+    "static/js/2.7fad7247.chunk.js",
     "static/css/main.b350d7e7.chunk.css",
-    "static/js/main.7003963e.chunk.js"
+    "static/js/main.0daaf016.chunk.js"
   ]
 }
