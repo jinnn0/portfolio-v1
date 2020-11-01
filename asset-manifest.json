@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/thisis-jin-react/static/css/main.c2f01a47.chunk.css",
-    "main.js": "/thisis-jin-react/static/js/main.e759b8bc.chunk.js",
-    "main.js.map": "/thisis-jin-react/static/js/main.e759b8bc.chunk.js.map",
+    "main.css": "/thisis-jin-react/static/css/main.b350d7e7.chunk.css",
+    "main.js": "/thisis-jin-react/static/js/main.7003963e.chunk.js",
+    "main.js.map": "/thisis-jin-react/static/js/main.7003963e.chunk.js.map",
     "runtime-main.js": "/thisis-jin-react/static/js/runtime-main.f52aecd0.js",
     "runtime-main.js.map": "/thisis-jin-react/static/js/runtime-main.f52aecd0.js.map",
     "static/js/2.161fdab4.chunk.js": "/thisis-jin-react/static/js/2.161fdab4.chunk.js",
     "static/js/2.161fdab4.chunk.js.map": "/thisis-jin-react/static/js/2.161fdab4.chunk.js.map",
     "index.html": "/thisis-jin-react/index.html",
-    "static/css/main.c2f01a47.chunk.css.map": "/thisis-jin-react/static/css/main.c2f01a47.chunk.css.map",
+    "static/css/main.b350d7e7.chunk.css.map": "/thisis-jin-react/static/css/main.b350d7e7.chunk.css.map",
     "static/js/2.161fdab4.chunk.js.LICENSE.txt": "/thisis-jin-react/static/js/2.161fdab4.chunk.js.LICENSE.txt",
     "static/media/agency.2c734b0f.jpg": "/thisis-jin-react/static/media/agency.2c734b0f.jpg",
     "static/media/agency.661a94a2.mov": "/thisis-jin-react/static/media/agency.661a94a2.mov",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.f52aecd0.js",
     "static/js/2.161fdab4.chunk.js",
-    "static/css/main.c2f01a47.chunk.css",
-    "static/js/main.e759b8bc.chunk.js"
+    "static/css/main.b350d7e7.chunk.css",
+    "static/js/main.7003963e.chunk.js"
   ]
 }
