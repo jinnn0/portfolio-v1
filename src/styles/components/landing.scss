@@ -1,0 +1,101 @@
+.landing {
+  height: 100vh; // fallback
+  // height: calc(var(--vh, 1vh) * 100);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  scroll-snap-align: start;
+  scroll-snap-align: end;
+
+  .texts {
+    h1 {
+      font-size: 3rem;
+
+      @include at800px {
+        font-size: 6rem;
+      }
+
+      &:nth-of-type(1) {
+        font-size: 3.5rem;
+
+        @include at800px {
+          font-size: 6rem;
+        }
+      }
+    }
+  }
+
+  .highlight {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+  }
+
+  .highlight::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(247, 238, 167, 0.783);
+    z-index: -1;
+    animation: showHighlight 0.5s ease 0.3s;
+  }
+
+  @keyframes showHighlight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .typing:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 60px;
+    background: black;
+    margin-left: 15px;
+    animation: blink 0.6s infinite ease;
+    transition: 0.3s ease;
+
+    @include at800px {
+      height: 90px;
+    }
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .scroll {
+    width: 100%;
+    min-height: 25px;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    animation: fade-up 0.5s ease-in-out;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+
+  @keyframes fade-up {
+    0% {
+      transform: translateY(200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

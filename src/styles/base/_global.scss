@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.App {
+  min-width: 320px;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.15s ease;
+  color: rgb(0, 0, 0);
+  padding-bottom: 5px;
+}
