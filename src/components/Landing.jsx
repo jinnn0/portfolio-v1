@@ -28,7 +28,9 @@ const Landing = () => {
         <h1 data-aos="fade-right" data-aos-delay="100">
           <div className="highlight">I'm Jinyoung,</div>
         </h1>
-        <h1 data-aos="fade-right" data-aos-delay="150" ref={typeMe} className="type-me"></h1>
+        <h1 data-aos="fade-right" data-aos-delay="150" ref={typeMe} className="type-me">
+          {}
+        </h1>
       </div>
 
       <a href="#projects" className="scroll">

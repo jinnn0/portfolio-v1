@@ -32,7 +32,7 @@ function App() {
     <div className="App">
       <Landing />
       {projects.map((project) => (
-        <Project project={project} />
+        <Project key={project.title} project={project} />
       ))}
     </div>
   );

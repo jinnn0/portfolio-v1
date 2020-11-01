@@ -7,7 +7,7 @@ const Project = ({ project }) => {
       <div className="project">
         <div className="project__img">
           <a href={project.projectLink} target="_blank">
-            <video playsinline autoPlay loop muted poster={project.poster}>
+            <video playsInline autoPlay loop muted poster={project.poster}>
               <source src={project.video} />
             </video>
           </a>
