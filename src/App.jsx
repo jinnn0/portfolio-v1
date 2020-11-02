@@ -3,6 +3,7 @@ import './styles/style.scss';
 import Landing from './components/Landing';
 import Project from './components/Project';
 import projects from './projects';
+import About from './components/About';
 
 function App() {
   const [windowSize, setWindowSize] = useState({
@@ -34,6 +35,7 @@ function App() {
       {projects.map((project) => (
         <Project key={project.title} project={project} />
       ))}
+      <About />
     </div>
   );
 }

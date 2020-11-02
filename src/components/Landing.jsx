@@ -22,7 +22,7 @@ const Landing = () => {
   }, []);
 
   return (
-    <div className="landing wrapper">
+    <div className="home">
       <div className="texts">
         <h1 data-aos="fade-right">Hey,</h1>
         <h1 data-aos="fade-right" data-aos-delay="100">

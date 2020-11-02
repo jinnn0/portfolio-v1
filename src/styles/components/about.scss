@@ -1,0 +1,84 @@
+.about-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @include at800px {
+    font-size: 1.2rem;
+  }
+
+  .about {
+    @include at800px {
+      width: 100%;
+      display: flex;
+    }
+
+    .left,
+    .right {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @include at800px {
+        height: 428px;
+        flex-basis: 50%;
+      }
+    }
+
+    .left {
+      font-size: 0.95rem;
+      line-height: 30px;
+      margin-bottom: 3rem;
+      text-align: center;
+
+      @include at800px {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        text-align: start;
+      }
+
+      &__title {
+        font-size: 1.2rem;
+        text-align: center;
+
+        @include at500px {
+          font-size: 1.5rem;
+        }
+
+        @include at800px {
+          font-size: 1.8rem;
+          text-align: start;
+        }
+      }
+
+      .skills {
+        font-size: 0.9rem;
+
+        p:nth-child(2) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .right {
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgba(0, 0, 0, 0.144);
+      border-radius: 20px;
+    }
+  }
+
+  .scroll-up {
+    font-size: 0.9rem;
+    margin-top: 6rem;
+
+    @include at800px {
+      position: absolute;
+      bottom: 2rem;
+    }
+  }
+}
