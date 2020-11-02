@@ -5,30 +5,33 @@ const About = () => {
     <div class="about-container">
       <div class="about">
         <div className="left">
-          <h2 className="about__title">About me</h2>
-          <div className="intro">
-            <div>
-              <p>
-                I'm a <strong>Frontend</strong> devloper, a proud <strong>music</strong> graduate
-              </p>
-              <p>who found a love for web development.</p>
-              <p>I'd love to be part of your exciting journey of building web apps. </p>
+          <div className="left__inner">
+            <h2 className="title">About me</h2>
+            <div className="intro">
+              <div>
+                <p>
+                  I'm a <strong>Frontend</strong> devloper, a proud <strong>music</strong> graduate
+                </p>
+                <p>who found a love for web development.</p>
+                <p>I'd love to be part of your exciting journey of building web apps. </p>
+              </div>
             </div>
-          </div>
 
-          <div className="skills">
-            <p>
-              <strong>Tools I use: </strong>
-            </p>
-            <p>
-              HTML, CSS / SCSS, JavaScript / ES6, React, Redux, REST API, GSAP, Canvas, Webpack, Git, GitHub,
-              VSCode
-            </p>
-            <p>
-              <strong>Others: </strong>
-            </p>
-            <p>I like to communicate, ask questions and solve problem.</p>
-            <p>.. and I love music and film</p>
+            <div className="skills">
+              <span>
+                <strong>Tools I use: </strong>
+              </span>
+              <p>
+                HTML, CSS / SCSS, JavaScript / ES6, React, Redux, REST API, GSAP, Canvas, Webpack, Git,
+                GitHub, VSCode
+              </p>
+
+              <span>
+                <strong>Others: </strong>
+              </span>
+              <p>I like to communicate, ask questions and solve problem.</p>
+              <p>.. and I love music and film</p>
+            </div>
           </div>
         </div>
 
@@ -38,10 +41,6 @@ const About = () => {
           </a>
         </div>
       </div>
-
-      <a href="#projects" class="scroll-up">
-        <div>see the projects again ?</div>
-      </a>
     </div>
   );
 };
