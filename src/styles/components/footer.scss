@@ -1,0 +1,30 @@
+footer {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  scroll-snap-align: end;
+  font-size: 0.9rem;
+
+  .social-links {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    @include at800px {
+      width: 400px;
+      margin-bottom: 50px;
+    }
+
+    a {
+      height: 25px;
+
+      &:hover {
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}

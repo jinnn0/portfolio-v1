@@ -4,6 +4,7 @@ import Landing from './components/Landing';
 import Project from './components/Project';
 import projects from './projects';
 import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
   const [windowSize, setWindowSize] = useState({
@@ -36,6 +37,7 @@ function App() {
         <Project key={project.title} project={project} />
       ))}
       <About />
+      <Footer />
     </div>
   );
 }
