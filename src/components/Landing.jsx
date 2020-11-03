@@ -33,7 +33,7 @@ const Landing = () => {
         </h1>
       </div>
 
-      <a href="#projects" className="scroll">
+      <a href="" className="scroll">
         <div>recent projects</div>
       </a>
     </div>

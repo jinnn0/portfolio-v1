@@ -20,10 +20,10 @@ const Project = ({ project }) => {
   }, []);
 
   return (
-    <section className="project-container" id="projects">
+    <section className="project-container">
       <div className="project">
         <div className="project__img">
-          <a href={project.projectLink} target="_blank">
+          <a href={project.projectLink} rel="noreferrer" target="_blank">
             <video ref={video} playsInline loop muted poster={project.poster}>
               <source src={project.video} />
             </video>
@@ -37,7 +37,7 @@ const Project = ({ project }) => {
           <div className="code-info">
             <p className="stacks">Stacks used : {project.stacks}</p>
             <div className="source-code">
-              <a href={project.sourceCode} target="_blank">
+              <a href={project.sourceCode} rel="noreferrer" target="_blank">
                 See the source code
                 <img className="gh-icon" src={ghLogo} alt="gitHub logo" />
               </a>
