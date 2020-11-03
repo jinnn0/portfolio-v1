@@ -2,29 +2,29 @@ import React, { useEffect, useRef } from 'react';
 import ghLogo from '../assets/images/logo/gitHub.png';
 
 const Project = ({ project }) => {
-  const video = useRef();
+  const videoRef = useRef();
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const documentBottom = window.innerHeight;
-      const videoFullHeight = video.current.offsetHeight;
-      const videoTop = video.current.getBoundingClientRect().top;
+      const videoFullHeight = videoRef.current.offsetHeight;
+      const videoTop = videoRef.current.getBoundingClientRect().top;
 
       if (0 < videoTop && videoTop < documentBottom - videoFullHeight) {
-        video.current.play();
+        videoRef.current.play();
       } else {
-        video.current.pause();
-        video.current.currentTime = 0;
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
       }
     });
   }, []);
 
   return (
-    <section className="project-container">
+    <section id={project.title} data-name={project.title} className="project-container">
       <div className="project">
         <div className="project__img">
           <a href={project.projectLink} rel="noreferrer" target="_blank">
-            <video ref={video} playsInline loop muted poster={project.poster}>
+            <video ref={videoRef} playsInline loop muted poster={project.poster}>
               <source src={project.video} />
             </video>
           </a>
