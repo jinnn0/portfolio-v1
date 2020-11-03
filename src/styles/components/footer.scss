@@ -9,13 +9,13 @@ footer {
   font-size: 0.9rem;
 
   .social-links {
-    width: 75%;
+    width: 130px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.5rem;
 
     @include at800px {
-      width: 400px;
+      // width: 400px;
       margin-bottom: 50px;
     }
 
