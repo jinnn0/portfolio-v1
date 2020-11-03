@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import ghLogo from '../assets/images/logo/gitHub.png';
 
 const Project = ({ project }) => {
+  const video = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      const documentBottom = window.innerHeight;
+      const videoFullHeight = video.current.offsetHeight;
+      const videoTop = video.current.getBoundingClientRect().top;
+
+      if (0 < videoTop && videoTop < documentBottom - videoFullHeight) {
+        video.current.play();
+      } else {
+        video.current.pause();
+        video.current.currentTime = 0;
+      }
+    });
+  }, []);
+
   return (
     <section className="project-container" id="projects">
       <div className="project">
         <div className="project__img">
           <a href={project.projectLink} target="_blank">
-            <video playsInline autoPlay loop muted poster={project.poster}>
+            <video ref={video} playsInline loop muted poster={project.poster}>
               <source src={project.video} />
             </video>
           </a>
