@@ -82,10 +82,15 @@
     }
 
     .right {
+      height: 50vh;
       justify-content: center;
       align-items: center;
       border: 1px solid rgba(0, 0, 0, 0.144);
       border-radius: 20px;
+
+      @include at800px {
+        height: 428px;
+      }
     }
   }
 }
