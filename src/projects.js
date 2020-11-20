@@ -1,7 +1,7 @@
-import todoVideo from './assets/videos/todo.mov';
-import twitterCloneVideo from './assets/videos/twitter-clone.mov';
-import timerVideo from './assets/videos/timer.mov';
-import agencyVideo from './assets/videos/agency.mov';
+import todoVideo from './assets/videos/todo.mp4';
+import twitterCloneVideo from './assets/videos/twitter-clone.mp4';
+import timerVideo from './assets/videos/timer.mp4';
+import agencyVideo from './assets/videos/agency.mp4';
 
 import todoPoster from './assets/images/project-snippets/todo.jpg';
 import twitterClonePoster from './assets/images/project-snippets/twitter-clone.jpg';
