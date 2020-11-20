@@ -1,15 +1,14 @@
 .about-container {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-
   @include at800px {
+    min-height: 700px;
+    height: 100vh; // fallback
+    // height: calc(var(--vh, 1vh) * 100);
+    display: flex;
+    align-items: center;
     font-size: 1.2rem;
   }
 
   .about {
-    width: 100%;
-
     @include at800px {
       width: 100%;
       display: flex;
@@ -17,66 +16,72 @@
 
     .left,
     .right {
-      width: 100%;
-      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
       @include at800px {
-        height: 428px;
         flex-basis: 50%;
       }
     }
 
-    .left__inner {
-      height: 450px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      text-align: center;
-      line-height: 30px;
-      margin-bottom: 3rem;
-
-      @include at500px {
-        font-size: 1rem;
-      }
+    .left {
+      height: 100vh;
+      // height: calc(var(--vh, 1vh) * 100);
 
       @include at800px {
-        height: 628px;
-        font-size: 1.15rem;
-        text-align: start;
-        margin-bottom: 0;
-        padding-right: 2rem;
+        height: 428px;
       }
 
-      .title {
-        font-size: 1.2rem;
+      .left__inner {
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 0.8rem;
         text-align: center;
+        line-height: 30px;
+        margin-bottom: 3rem;
 
         @include at500px {
-          font-size: 1.5rem;
+          font-size: 1rem;
         }
 
         @include at800px {
-          font-size: 1.8rem;
+          height: 628px;
+          font-size: 1.15rem;
           text-align: start;
+          margin-bottom: 0;
+          padding-right: 2rem;
         }
-      }
 
-      .skills {
-        p {
-          width: 85%;
-          margin: 0 auto;
+        .title {
+          font-size: 1.2rem;
+          text-align: center;
+
+          @include at500px {
+            font-size: 1.5rem;
+          }
 
           @include at800px {
-            width: 100%;
-            font-size: 1rem;
+            font-size: 1.8rem;
+            text-align: start;
           }
         }
-        p:nth-child(2) {
-          margin-bottom: 1rem;
+
+        .skills {
+          p {
+            width: 85%;
+            margin: 0 auto;
+
+            @include at800px {
+              width: 100%;
+              font-size: 1rem;
+            }
+          }
+          p:nth-child(2) {
+            margin-bottom: 1rem;
+          }
         }
       }
     }
