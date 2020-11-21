@@ -11,7 +11,7 @@ const Landing = () => {
     function type() {
       letter = texts.slice(0, index++);
       typeMe.current.textContent = letter;
-      const timerRef = setTimeout(type, 150);
+      const timerRef = setTimeout(type, 110);
 
       if (letter.length === 24) {
         window.clearTimeout(timerRef);

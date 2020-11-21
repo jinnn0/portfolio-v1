@@ -2,7 +2,6 @@
   min-height: 650px;
   height: 100vh; // fallback
   // height: calc(var(--vh, 1vh) * 100);
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -80,24 +79,27 @@
   }
 
   .scroll {
-    width: 100%;
-    min-height: 25px;
-    text-align: center;
+    height: 25px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    transition: all 0.5s ease-in-out;
-    animation: fade-up 0.5s ease-in-out;
-    margin-bottom: 2rem;
+    animation: fade-up 0.65s ease-in-out 3s 2;
     cursor: pointer;
   }
 
   @keyframes fade-up {
     0% {
-      transform: translateY(200%);
+      transform: translate(-50%, 0);
     }
+
+    50% {
+      transform: translate(-50%, 50%);
+    }
+
     100% {
-      transform: translateY(0);
+      transform: translate(-50%, 0);
     }
   }
 }
