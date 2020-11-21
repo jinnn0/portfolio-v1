@@ -1,7 +1,6 @@
 .project-container {
   min-height: 700px;
-  height: 100vh; // fallback
-  // height: calc(var(--vh, 1vh) * 100);
+  height: 100vh;
   display: flex;
   align-items: center;
   margin-bottom: 2rem;

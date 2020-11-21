@@ -1,8 +1,7 @@
 .about-container {
   @include at800px {
     min-height: 700px;
-    height: 100vh; // fallback
-    // height: calc(var(--vh, 1vh) * 100);
+    height: 100vh;
     display: flex;
     align-items: center;
     font-size: 1.2rem;
@@ -27,7 +26,6 @@
 
     .left {
       height: 100vh;
-      // height: calc(var(--vh, 1vh) * 100);
 
       @include at800px {
         height: 428px;
