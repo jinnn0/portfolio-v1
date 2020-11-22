@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
+  scroll-snap-align: center;
 
   @include at800px {
     margin-bottom: 0;

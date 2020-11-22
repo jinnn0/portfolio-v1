@@ -1,5 +1,8 @@
 .about-container {
+  scroll-snap-align: start;
+
   @include at800px {
+    scroll-snap-align: center;
     min-height: 700px;
     height: 100vh;
     display: flex;

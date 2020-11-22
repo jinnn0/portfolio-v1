@@ -4,9 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
   scroll-snap-align: start;
-  scroll-snap-align: end;
-  overflow: hidden;
 
   .texts {
     h1 {
