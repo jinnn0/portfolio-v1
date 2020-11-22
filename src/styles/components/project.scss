@@ -1,33 +1,51 @@
 .project-container {
   min-height: 700px;
   height: 100vh;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
-  scroll-snap-align: center;
 
-  @include at800px {
+  @media (min-height: 700px), (min-width: 950px) {
+    scroll-snap-align: center;
+  }
+
+  @include at950px {
     margin-bottom: 0;
   }
 }
 
 .project {
   width: 100%;
-  height: 100vh;
-  max-height: 600px;
+  height: 600px;
 
-  @include at800px {
+  @include at950px {
+    height: 35vw;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 430px;
+  }
+
+  @include at1200px {
+    width: 85vw;
+  }
+
+  @include at1500px {
+    width: 80vw;
+    height: 27vw;
+  }
+
+  @include at1800px {
+    width: 70vw;
+    height: 20vw;
   }
 
   &__img,
   &__desc {
     height: 50%;
 
-    @include at800px {
+    @include at950px {
       width: 100%;
       height: 100%;
       flex-basis: 50%;
@@ -38,6 +56,11 @@
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.144);
     border-radius: 20px;
+
+    @include at500px {
+      width: 450px;
+      margin: 0 auto;
+    }
 
     a {
       video {
@@ -53,10 +76,6 @@
   }
 
   &__desc {
-    * {
-      text-align: center;
-    }
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -65,45 +84,56 @@
     font-size: 0.8rem;
 
     @include at500px {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
 
-    @include at1000px {
-      font-size: 1.15rem;
+    @include at950px {
+      font-size: 1.5vw;
+    }
+
+    @include at1200px {
+      font-size: 1.25vw;
+    }
+
+    @include at1500px {
+      font-size: 1.1vw;
+    }
+
+    @include at1800px {
+      font-size: 0.8vw;
     }
 
     .title {
-      font-size: 1.2rem;
       margin-top: 20px;
-
-      @include at500px {
-        font-size: 1.5rem;
-      }
-
-      @include at800px {
-        font-size: 1.8rem;
-      }
     }
 
     .desc {
       width: 100%;
       max-width: 500px;
-
       line-height: 1.35rem;
+      text-align: center;
 
       @include at500px {
         width: 90%;
         line-height: 2rem;
       }
 
-      @include at800px {
-        width: 85%;
+      @include at950px {
+        width: 80%;
+        max-width: none;
+        line-height: 2em;
       }
     }
 
     .code-info {
+      text-align: center;
+
       .source-code {
-        margin-top: 0.5rem;
+        margin-top: 10px;
+
+        @include at950px {
+          margin-top: 20px;
+        }
 
         a {
           display: flex;
@@ -112,10 +142,10 @@
 
           .gh-icon {
             width: 13px;
-            margin-left: 0.3rem;
+            margin-left: 15px;
 
             @include at500px {
-              width: 15px;
+              width: 1.3vw;
             }
           }
         }

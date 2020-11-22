@@ -1,27 +1,29 @@
-@mixin border {
-  border: 1px solid black;
-}
-
-@mixin at250px {
-  @media (min-width: 250px) {
-    @content;
-  }
-}
-
 @mixin at500px {
   @media (min-width: 500px) {
     @content;
   }
 }
 
-@mixin at800px {
-  @media (min-width: 800px) {
+@mixin at950px {
+  @media (min-width: 950px) {
     @content;
   }
 }
 
-@mixin at1000px {
-  @media (min-width: 1000px) {
+@mixin at1200px {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin at1500px {
+  @media (min-width: 1500px) {
+    @content;
+  }
+}
+
+@mixin at1800px {
+  @media (min-width: 1800px) {
     @content;
   }
 }

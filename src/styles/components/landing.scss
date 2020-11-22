@@ -1,25 +1,44 @@
 .landing {
-  min-height: 650px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  scroll-snap-align: start;
+  padding-top: 10px;
+
+  @media (min-height: 700px), (min-width: 950px) {
+    scroll-snap-align: start;
+  }
 
   .texts {
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
 
-      @include at800px {
-        font-size: 6rem;
+      @include at500px {
+        font-size: 6vw;
+      }
+
+      @include at1200px {
+        font-size: 4vw;
+      }
+
+      @include at1800px {
+        font-size: 3vw;
       }
 
       &:nth-of-type(1) {
-        font-size: 3.5rem;
+        font-size: 2.7rem;
 
-        @include at800px {
-          font-size: 6rem;
+        @include at500px {
+          font-size: 8vw;
+        }
+
+        @include at1200px {
+          font-size: 6vw;
+        }
+
+        @include at1800px {
+          font-size: 5vw;
         }
       }
     }
@@ -62,8 +81,18 @@
     animation: blink 0.6s infinite ease;
     transition: 0.3s ease;
 
-    @include at800px {
-      height: 90px;
+    height: 2rem;
+
+    @include at500px {
+      height: 6vw;
+    }
+
+    @include at1200px {
+      height: 4vw;
+    }
+
+    @include at1800px {
+      height: 3vw;
     }
   }
 
@@ -79,7 +108,7 @@
   .scroll {
     height: 25px;
     position: absolute;
-    bottom: 50px;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1rem;

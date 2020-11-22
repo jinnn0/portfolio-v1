@@ -10,15 +10,22 @@ body {
 
 .App {
   min-width: 320px;
-  max-width: 1200px;
   max-height: 100vh;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
   margin: 0 auto;
+  overflow-x: hidden;
   overflow-y: scroll;
+  scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (min-height: 700px), (min-width: 950px) {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
 }
 
 a {

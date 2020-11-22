@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './styles/style.scss';
 import Landing from './components/Landing';
 import Project from './components/Project';
