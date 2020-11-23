@@ -5,26 +5,31 @@ const Project = ({ project }) => {
   const videoRef = useRef();
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      const documentBottom = window.innerHeight;
-      const videoFullHeight = videoRef.current.offsetHeight;
-      const videoTop = videoRef.current.getBoundingClientRect().top;
+    document.addEventListener(
+      'scroll',
+      () => {
+        const documentBottom = window.innerHeight;
+        const videoFullHeight = videoRef.current.offsetHeight;
+        const videoTop = videoRef.current.getBoundingClientRect().top;
 
-      if (0 < videoTop && videoTop < documentBottom - videoFullHeight) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-        videoRef.current.currentTime = 0;
-      }
-    });
+        // play video only when the video is inside the clientview
+        if (0 < videoTop && videoTop < documentBottom - videoFullHeight) {
+          videoRef.current.play();
+        } else {
+          videoRef.current.pause();
+          videoRef.current.currentTime = 0;
+        }
+      },
+      true
+    );
   }, []);
 
   return (
-    <section id={project.title} data-name={project.title} className="project-container">
+    <section id={project.title} className="project-container">
       <div className="project">
         <div className="project__img">
           <a href={project.projectLink} rel="noreferrer" target="_blank">
-            <video ref={videoRef} playsInline loop muted poster={project.poster}>
+            <video ref={videoRef} playsInline loop muted poster={project.poster} data-name={project.title}>
               <source src={project.video} />
             </video>
           </a>
