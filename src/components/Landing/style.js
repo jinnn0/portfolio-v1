@@ -1,4 +1,6 @@
-.landing {
+import styled from 'styled-components';
+
+export const LandingContainer = styled.section`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,48 +11,48 @@
   @media (min-height: 700px), (min-width: 950px) {
     scroll-snap-align: start;
   }
+`;
 
-  .texts {
-    h1 {
-      font-size: 2rem;
+export const TextContainer = styled.div`
+  h1 {
+    font-size: 2rem;
 
-      @include at500px {
+    @media (min-height: 500px) {
+      font-size: 6vw;
+    }
+
+    @media (min-height: 1200px) {
+      font-size: 5vw;
+    }
+
+    @media (min-height: 1800px) {
+      font-size: 4vw;
+    }
+
+    &:nth-of-type(1) {
+      font-size: 2.7rem;
+
+      @media (min-height: 500px) {
+        font-size: 8vw;
+      }
+
+      @media (min-height: 1200px) {
+        font-size: 7vw;
+      }
+
+      @media (min-height: 1800px) {
         font-size: 6vw;
-      }
-
-      @include at1200px {
-        font-size: 5vw;
-      }
-
-      @include at1800px {
-        font-size: 4vw;
-      }
-
-      &:nth-of-type(1) {
-        font-size: 2.7rem;
-
-        @include at500px {
-          font-size: 8vw;
-        }
-
-        @include at1200px {
-          font-size: 7vw;
-        }
-
-        @include at1800px {
-          font-size: 6vw;
-        }
       }
     }
   }
+`;
 
-  .highlight {
-    display: inline-block;
-    position: relative;
-    z-index: 10;
-  }
+export const HightLight = styled.h1`
+  display: inline-block;
+  position: relative;
+  z-index: 10;
 
-  .highlight::before {
+  &::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -70,7 +72,9 @@
       transform: translateX(0);
     }
   }
+`;
 
+export const TypeMe = styled.h1`
   .type-me:after {
     content: '';
     position: absolute;
@@ -82,15 +86,15 @@
     transition: 0.3s ease;
     height: 2rem;
 
-    @include at500px {
+    @media (min-height: 500px) {
       height: 6vw;
     }
 
-    @include at1200px {
+    @media (min-height: 1200px) {
       height: 4vw;
     }
 
-    @include at1800px {
+    @media (min-height: 1800px) {
       height: 3vw;
     }
   }
@@ -103,17 +107,17 @@
       opacity: 1;
     }
   }
+`;
 
-  .scroll {
-    height: 25px;
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1rem;
-    animation: fade-up 0.65s ease-in-out 3s 2;
-    cursor: pointer;
-  }
+export const ScrollLink = styled.a`
+  height: 25px;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  animation: fade-up 0.65s ease-in-out 3s 2;
+  cursor: pointer;
 
   @keyframes fade-up {
     0% {
@@ -128,4 +132,4 @@
       transform: translate(-50%, 0);
     }
   }
-}
+`;

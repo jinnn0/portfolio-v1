@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { LandingContainer, TextContainer, HightLight, TypeMe, ScrollLink } from './style';
 
 const Landing = () => {
   const typeMe = useRef();
@@ -22,21 +23,14 @@ const Landing = () => {
   }, []);
 
   return (
-    <div className="landing">
-      <div className="texts">
-        <h1 data-aos="fade-right">Hey,</h1>
-        <h1 data-aos="fade-right" data-aos-delay="100">
-          <div className="highlight">I'm Jinyoung,</div>
-        </h1>
-        <h1 data-aos="fade-right" data-aos-delay="150" ref={typeMe} className="type-me">
-          {}
-        </h1>
-      </div>
-
-      <a href="#To Do" className="scroll">
-        recent projects
-      </a>
-    </div>
+    <LandingContainer>
+      <TextContainer>
+        <h1>Hey,</h1>
+        <HightLight>I'm Jinyoung,</HightLight>
+        <TypeMe ref={typeMe}>{}</TypeMe>
+      </TextContainer>
+      <ScrollLink href="#To Do">recent projects</ScrollLink>
+    </LandingContainer>
   );
 };
 

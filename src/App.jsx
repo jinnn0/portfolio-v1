@@ -1,10 +1,9 @@
 import React from 'react';
-import './styles/style.scss';
 import Landing from './components/Landing';
 import Project from './components/Project';
-import projects from './projects';
 import About from './components/About';
 import Footer from './components/Footer';
+import projects from './projects';
 
 function App() {
   return (

@@ -1,22 +1,21 @@
 import React from 'react';
+import { AboutContainer, AboutInner, AboutLeft, Title, Skills, AboutRight } from './style';
 
 const About = () => {
   return (
-    <div className="about-container">
-      <div className="about">
-        <div className="left">
-          <h2 className="title">About me</h2>
-          <div className="intro">
-            <div>
-              <p>
-                I'm a <strong>Frontend</strong> devloper, a proud <strong>music</strong> graduate
-              </p>
-              <p>who found a love for web development.</p>
-              <p>I'd love to be part of your exciting journey of building web apps. </p>
-            </div>
+    <AboutContainer>
+      <AboutInner>
+        <AboutLeft>
+          <Title>About me</Title>
+          <div>
+            <p>
+              I'm a <strong>Frontend</strong> devloper, a proud <strong>music</strong> graduate
+            </p>
+            <p>who found a love for web development.</p>
+            <p>I'd love to be part of your exciting journey of building web apps. </p>
           </div>
 
-          <div className="skills">
+          <Skills>
             <span>
               <strong>Tools I use: </strong>
             </span>
@@ -30,16 +29,16 @@ const About = () => {
             </span>
             <p>I like to communicate, ask questions and solve problem.</p>
             <p>.. and I love music and film</p>
-          </div>
-        </div>
+          </Skills>
+        </AboutLeft>
 
-        <div className="right">
+        <AboutRight className="right">
           <a className="email" href="mailto: jinyoung.jeong20@gmail.com">
             jinyoung.jeong20@gmail.com
           </a>
-        </div>
-      </div>
-    </div>
+        </AboutRight>
+      </AboutInner>
+    </AboutContainer>
   );
 };
 
