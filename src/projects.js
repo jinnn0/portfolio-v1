@@ -15,7 +15,7 @@ const projects = [
     video: todoVideo,
     poster: todoPoster,
     description:
-      "I started this project to simplify some of the core features of the todo apps that I've used. Minimalistic UI was a lot of fun to create 👍🏻",
+      "I started this project to simplify some of the core features of the todo apps that I've used. Minimalistic UI was a lot of fun to create.",
     stacks: 'React, Context API, Firebase, GSAP',
     sourceCode: 'https://github.com/jinnn0/to-do'
   },
@@ -35,7 +35,7 @@ const projects = [
     video: agencyVideo,
     poster: agencyPoster,
     description:
-      'Inspired by an agency website at awwwards.com. GSAP was used to create the landing page animation ✔︎ ',
+      'Inspired by an agency website at awwwards.com. GSAP was used to create the landing page animation.',
     stacks: 'React, GSAP',
     sourceCode: 'https://github.com/jinnn0/agency-website'
   },
