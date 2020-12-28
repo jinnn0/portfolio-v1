@@ -18,7 +18,7 @@ export const FooterContainer = styled.section`
 `;
 
 export const SocialLinks = styled.div`
-  width: 130px;
+  width: 170px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5rem;

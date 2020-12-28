@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import ghLogo from '../../assets/images/logo/gitHub.png';
+import ghLogo from '../../assets/images/icons/gitHub.png';
 import {
   ProjectContainer,
   ProjectInner,

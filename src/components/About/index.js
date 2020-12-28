@@ -17,7 +17,7 @@ const About = () => {
 
           <Skills>
             <span>
-              <strong>Tools I use: </strong>
+              <strong>Skills & tools: </strong>
             </span>
             <p>
               HTML, CSS / SCSS, JavaScript / ES6, React, Redux, REST API, GSAP, Canvas, Webpack, Git, GitHub,
