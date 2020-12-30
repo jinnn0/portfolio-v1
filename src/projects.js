@@ -16,7 +16,7 @@ const projects = [
     poster: todoPoster,
     description:
       "I started this project to simplify some of the core features of the todo apps that I've used. Minimalistic UI was a lot of fun to create.",
-    stacks: 'React, Context API, Firebase, GSAP',
+    stacks: 'React, Context API, GSAP',
     sourceCode: 'https://github.com/jinnn0/to-do'
   },
   {
