@@ -16,6 +16,7 @@ const Footer = () => {
           CV
         </a>
       </SocialLinks>
+
       <div>&copy;{new Date().getFullYear()} Jinyoung Jeong</div>
     </FooterContainer>
   );
