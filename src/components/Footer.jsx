@@ -10,9 +10,6 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/jinyoung-jeong-457562140/" rel="noreferrer" target="_blank">
           LinkedIn
         </a>
-        {/* <a href="/" rel="noreferrer" target="_blank">
-          Resume
-        </a> */}
       </div>
       <div>&copy;{new Date().getFullYear()} Jinyoung Jeong</div>
     </footer>
