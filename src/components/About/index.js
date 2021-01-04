@@ -9,7 +9,7 @@ const About = () => {
           <Title>About me</Title>
           <div>
             <p>
-              I'm a <strong>Frontend</strong> devloper, a proud <strong>music</strong> graduate
+              I'm a <strong>Frontend</strong> developer, a proud <strong>music</strong> graduate
             </p>
             <p>who found a love for web development.</p>
             <p>I'd love to be part of your exciting journey of building web apps. </p>
