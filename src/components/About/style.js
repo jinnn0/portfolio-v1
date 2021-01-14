@@ -111,6 +111,7 @@ export const AboutRight = styled.div`
   margin: 0 auto;
   border: 1px solid rgba(0, 0, 0, 0.144);
   border-radius: 20px;
+  cursor: pointer;
 
   @media (min-width: 500px) {
     width: 450px;

@@ -11,7 +11,7 @@ const About = () => {
             <p>
               I'm a <strong>Frontend</strong> developer, a proud <strong>music</strong> graduate
             </p>
-            <p>who found a love for web development.</p>
+            <p>who found love for web development.</p>
             <p>I'd love to be part of your exciting journey of building web apps. </p>
           </div>
 
@@ -20,8 +20,8 @@ const About = () => {
               <strong>Skills & tools: </strong>
             </span>
             <p>
-              HTML, CSS / SCSS, JavaScript / ES6, React, Redux, REST API, GSAP, Canvas, Webpack, Git, GitHub,
-              VSCode
+              HTML, CSS / SCSS, JavaScript / ES6, React, Styled-components, GSAP, Canvas, Webpack, Git,
+              GitHub, VSCode, Netlify, Figma
             </p>
 
             <span>
