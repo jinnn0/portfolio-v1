@@ -21,7 +21,7 @@ const About = () => {
             </span>
             <p>
               HTML, CSS / SCSS, JavaScript / ES6, React, Styled-components, GSAP, Canvas, Webpack, Git,
-              GitHub, VSCode, Netlify, Figma
+              GitHub, Netlify, Figma
             </p>
 
             <span>
