@@ -5,7 +5,7 @@ const Landing = () => {
   const typeMe = useRef();
 
   useEffect(() => {
-    const texts = "I'd like to make things.";
+    const texts = "Scroll to see what I've been up to!";
     let index = 0;
     let letter = '';
 
@@ -14,7 +14,7 @@ const Landing = () => {
       typeMe.current.textContent = letter;
       const timerRef = setTimeout(type, 110);
 
-      if (letter.length === 24) {
+      if (letter.length === 35) {
         window.clearTimeout(timerRef);
       }
     }
